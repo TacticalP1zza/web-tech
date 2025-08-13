@@ -1,0 +1,429 @@
+*{
+padding: 0;
+margin: 0;
+background-repeat: no-repeat;
+list-style: none;
+text-decoration: none;
+color: white;
+box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(106, 107, 106);
+    min-height: 100vh;
+
+
+}
+
+/* header and navigation styles are found here */
+header {
+    background: white;
+    width: 100%;
+    height: 250px;
+    border-style: solid;
+    border-color: gray;
+    background-image: url("Images/back.png");
+    background-size: 100%;
+    background-position: 0px -500px;
+    
+}
+ 
+.navbarList {
+    display:flex;
+    justify-content: space-between;
+    margin: 2%;
+    margin-left: 4%;
+    margin-right: 5%;
+}
+
+nav .logo a {
+text-indent:-9999px;
+left: 45%;
+top: 0%;
+background-image: url("Images/Heartgold.png");
+height: 150px;
+width: 250px;
+position: absolute;
+background-size: 250px;
+}
+
+nav figcaption{
+    position: sticky;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+nav figcaption:hover,.logbutton:hover{
+    text-size-adjust: 10px;
+    color: blue;
+    text-transform: uppercase;
+}
+/*end of header and navigation styles*/
+
+/*Footer styles start here*/
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    border-style: solid;
+    border-color: gray;
+    display: inline-block;
+    justify-content: space-evenly;
+
+}
+footer ul{
+    display: inline-block;
+    justify-content: space-evenly;
+}
+/*footer styles end here*/
+
+
+/*styles for the CV.php go here*/
+.IDinfo { 
+  position: relative;
+  background-color: transparent;
+  font-size: 13px; 
+  text-align: left;
+  background-image: url("Images/ID.png");
+  height: 170px;
+  width: 260px;
+  margin: 1%;
+}
+.IDinfo ul{
+    transform: translate(40px, 37px); 
+}
+.IDEmail{
+    transform: translate(0px, 50px); 
+}
+
+.CV {
+    position: relative;
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(53, 1, 53);
+    display: grid;
+    place-self: center; 
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    grid-template-columns: 1fr 2fr;
+    margin: auto;
+    border-width: 0.5ch;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color:white;
+}
+.CVLeftSide{
+    background-color: rgb(53, 1, 53);
+    position: relative;
+    padding: 3%;
+}
+.CVRightSide{
+    position: relative;
+    padding: 3%;
+    background-color:white;
+    border-radius: 10px;
+}
+.SkillsList li{
+    color: rgb(54, 148, 177);
+    font-size: 19px;
+    list-style: square;
+}
+.SkillsList h1{
+    text-decoration: underline;
+    color: rgb(40, 109, 129);
+    font-weight: 1000;
+    font-size: 1.5em;
+}
+.SkillsList{   
+    margin-left: 40px;
+}
+.Interests, .languages{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.Interests h2{
+    padding-bottom: 10px;
+    color: rgb(40, 109, 129);
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+.Interests h4{
+    font-weight: 500;
+}
+
+.Interests h3{
+  font-weight: 500;
+  color: rgb(54, 148, 177);
+  letter-spacing: -0.01em;
+}
+
+
+.Interests li:nth-child(3),.Interests li:nth-child(2){
+  padding-bottom: 10px; 
+}
+.interestUrl:hover{
+    color: blue;
+}
+
+
+
+.Languagebar{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    display: block;
+    background-color:  rgba(54, 148, 177, 0.356); ;
+    border-radius: 5px;
+}
+.Languagebar div {
+    background-color: rgb(54, 148, 177);
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+.languages li{
+    height: 35px;
+}
+.CVProfile h2, .CVProfile p{
+    color: black;
+}
+.CVTitle{
+    text-transform: uppercase;
+    color: rgb(3, 3, 31);
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+.AchievementsBox{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.Achievements h2{
+    color: black;
+    margin: 10px;
+    margin-left: 0px;
+}
+.AchievementsTitles h4{
+    color: black;
+    min-width: 100px;
+}
+.AchievementsMaintext p,.AchievementsMaintext h3{
+    color: black;
+    margin-right: 20px;
+}
+.ModulesBox h3, .ModulesBox p{
+    color: black;
+}
+.ModulesBox{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+@media (max-width: 800px) {
+    .CV{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+/*Styles for the CV.php end here*/
+
+/*Styles for login screen go here*/
+.Loginbox{
+    background-color: rgb(53, 1, 53);
+    height: 45%;
+    width: 15%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    border-color: black;
+    border-style: solid;
+    
+}
+
+.Loginbutton{
+    font-size: 120%;
+    background-color:rgb(53, 1, 53);
+    border-style: solid;
+    border-color: black;
+    border-radius: 20%;
+    padding: 2%;
+    margin: 2%;
+    margin-left: 0;
+
+}
+.Login h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 105%;
+    text-align: center;
+}
+.usernameBox, .passwordBox{
+    font-size: 105%;
+    margin-top: 5%;
+    color: black;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5%;
+    
+}
+.Loginbutton:hover{
+    color: lightblue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*styles for login screen end here*/
+
+/*Styles for library.php go here*/
+
+.TableOfBooks{
+    background-color: whitesmoke;
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 1%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 0;
+    height: 100%;
+    width: 40%;
+}
+.TableOfBooks tr{
+    background-color: rgb(53, 1, 53);
+    border: solid;
+    border-color: red;
+    border-style: solid;
+    border-radius: 5%;
+}
+.TableOfBooks td{
+    padding: 20px;  
+    padding-bottom: 5px;
+    
+}
+.TableOfBooks td a:hover{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.bookTable{
+    display: grid;
+}
+.BookDescription{
+    background-color: rgb(53, 1, 53);
+    padding: 1%;
+
+
+
+
+}
+.TheBook{width: 80vw;
+    height: 80%;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;    
+    background-color: black;
+}
+#DisplayBookTitle{
+    text-decoration: underline;
+    font-size: larger;
+}
+.DisplayModuleURL:hover{
+    color:blue;
+    font-weight: Bold;
+    font-size: 15px;
+    
+}
+.BookSubmission{
+  background-color:rgb(53, 1, 53);
+  border-color: black;
+  border-radius: 5px;
+  padding: 1%;
+  border-style: solid;
+  border-width: 5px;
+}
+.BookSubmission button{
+    background-color: black;
+}
+/*Styles for library.php end here*/
+
+.Bookbox{
+    border-radius: 10px;
+    border-color: rgb(53, 1, 53);
+    background-color: rgb(53, 1, 53);
+    padding: 1%;
+}
+.TheBook{    
+    background-color: whitesmoke;
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 1%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    height: 100%;
+    width: 40%;
+}
+.form input{color: black;}
+    
+/*Styles for Weather.php start here*/
+.weatherbox {
+    display: grid;
+    grid-template-columns:repeat( 1fr 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    background-color: rgb(250, 248, 246);
+    width: 80%;
+    height: 80%;
+    border: solid;
+    border-color: black;
+    margin-top: 3%;
+    padding: 2%;
+    border-radius: 5%;
+    margin: auto;
+}
+
+.charts {
+    width: 75vw;
+    margin: auto;
+    
+}
+
+.charts canvas {
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(250, 248, 246);
+    border: solid;
+    border-color: black;
+    margin-top: 3%;
+    padding: 5%;
+    border-radius: 5%;
+}
+
+.weatherbox button,
+.weatherbox select {
+    background-color: rgb(53, 1, 53);
+    text-transform: capitalize;
+    color: rgb(250, 248, 246);
+}
+
+
+
+
+
+
+
+
+/*Styles for Weather.php end here*/
+
